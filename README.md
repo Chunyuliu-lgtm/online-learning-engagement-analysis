@@ -151,6 +151,20 @@ Certification Rate by Group:
 Reward-based interventions delivered the highest certification performance.
 
 ---
+
+## Key Visual insights
+
+### 1. Learning Platform Funnel
+![Funnel Analysis](figures/learning_platform_funnel.png)
+### 2. Key Certification Drivers
+![Certification Drivers](figures/highest_certification_rate_across_engagement_metrics.png)
+### 3. Cohort Retention Analysis
+![Cohort Retention Analysis](figures/retention_rate_by_cohorts.png)
+### 4. A/B/n Testing
+![A/B/n Test](figures/a_b_n_test.png)
+
+---
+
 ## Business Recommendations
 
 Based on the analysis, the following product strategies are recommended:
