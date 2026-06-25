@@ -230,7 +230,6 @@ Based on funnel analysis:
 
 * Paying users: **39,686**
 * Reward-eligible high-engagement users: **16,283**
-![Funnel Analysis](figures/learning_platform_funnel.png)
 
 ---
 
@@ -271,7 +270,7 @@ Simulation results suggest that a **Medium Reward Strategy** provides the strong
 
 ![ROI Comparison](figures/roi_comparison.png)
 ![Reward Strategy ROI](figures/roi_by_reward_strategy.png)
-![Reward Strategy Net Profit](figures/net_prfit_by_reward_strategy.png)
+![Reward Strategy Net Profit](figures/net_profit_by_reward_strategy.png)
 
 
 
