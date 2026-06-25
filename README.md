@@ -10,6 +10,48 @@ Using exploratory data analysis, funnel analysis, cohort analysis, segmentation,
 
 This project is designed from a Product Analytics perspective, focusing on learner behavior, retention optimization, and data-driven product strategy.
 
+## Key Findings
+
+### 1. Chapter completion is the strongest predictor of certification success
+
+Among all engagement metrics, chapter completion showed the strongest positive relationship with certification outcomes. Learners completing more chapters consistently achieved significantly higher certification rates.
+
+---
+
+### 2. Sustained engagement drives learner success
+
+Longer active learning duration, higher platform activity, and greater video engagement strongly improved certification outcomes. Retention emerged as a major driver of course completion.
+
+---
+
+### 3. Cohort behavior reveals strong retention patterns
+
+Enrollment showed clear cohort effects and seasonal learning patterns. Cohorts with higher retention consistently achieved better certification outcomes.
+
+---
+
+### 4. Incentive-based interventions outperform passive reminders
+
+A/B/n testing showed both intervention strategies improved certification outcomes:
+
+* Control: **2.76%**
+* Email Reminder: **3.40%**
+* Reward Incentive: **4.30%**
+
+Reward incentives delivered the strongest certification improvement.
+
+---
+
+### 5. Medium reward strategy maximizes long-term business value
+
+ROI analysis and long-term simulation revealed a critical business trade-off:
+
+* Low Reward achieved the highest ROI
+* Medium Reward generated the highest net profit
+* High Reward showed diminishing returns due to rising reward costs
+
+The optimal strategy is not the highest reward level, but the one that balances engagement improvement and profitability.
+
 ---
 
 ## Dataset
@@ -37,6 +79,20 @@ This project uses the HarvardX-MITx Person-Course dataset, a large-scale public 
 * `nforum_posts`: Number of forum posts
 
 ---
+
+## Key Skills Demonstrated
+
+* Product Analytics
+* Funnel Analysis
+* Cohort Analysis
+* Retention Analysis
+* A/B/n Testing
+* Statistical Hypothesis Testing
+* ROI Analysis
+* Business Intelligence
+* Incentive Strategy Optimization
+* Data-Driven Product Recommendations
+
 
 ## Project Objectives
 
@@ -74,6 +130,7 @@ Learner conversion funnel from registration to certification:
 * Certified
 
 This analysis identifies major drop-off points in the learner journey.
+![Funnel Analysis](figures/learning_platform_funnel.png)
 
 ### 3. Engagement Metrics Analysis
 
@@ -85,6 +142,7 @@ Core engagement metrics analyzed:
 * Chapters completed (`nchapters`)
 
 This analysis evaluates how different engagement behaviors relate to learner success.
+![Certification Drivers](figures/highest_certification_rate_across_engagement_metrics.png)
 
 ### 4. Segmentation Analysis
 
@@ -99,111 +157,218 @@ Cohort analysis was conducted based on learner registration month to examine:
 * Certification trends
 
 This analysis helps identify seasonal patterns and cohort-level performance differences.
-
-### 6. A/B/n Testing Simulation
-
-A simulated product experiment was designed to compare intervention effectiveness:
-
-* Control Group
-* Email Reminder Group
-* Reward Incentive Group
-
-The goal was to evaluate which intervention most effectively improves certification outcomes.
-
----
-
-## Key Findings
-
-### 1. Chapter completion is the strongest predictor of certification success
-
-Among all engagement metrics, chapter completion showed the strongest positive relationship with certification outcomes.
-
-Learners with higher chapter completion consistently achieved significantly higher certification rates.
-
----
-
-### 2. Sustained engagement strongly improves learner success
-
-Longer active learning duration, higher platform activity, and greater video engagement all positively correlate with certification outcomes.
-
-Retention is a major driver of successful course completion.
-
----
-
-### 3. Learner behavior shows strong cohort patterns
-
-Enrollment showed clear seasonal peaks aligned with academic and learning cycles.
-
-Cohorts with higher retention consistently demonstrated higher certification rates.
-
----
-
-### 4. Reward incentives outperform passive reminders
-
-A/B/n testing simulation showed that both interventions improved certification outcomes.
-
-Certification Rate by Group:
-
-* Control: 2.76%
-* Email Reminder: 3.40%
-* Reward Incentive: 4.30%
-
-Reward-based interventions delivered the highest certification performance.
-
----
-
-## Key Visual insights
-
-### 1. Learning Platform Funnel
-![Funnel Analysis](figures/learning_platform_funnel.png)
-### 2. Key Certification Drivers
-![Certification Drivers](figures/highest_certification_rate_across_engagement_metrics.png)
-### 3. Cohort Retention Analysis
 ![Cohort Retention Analysis](figures/retention_rate_by_cohorts.png)
-### 4. A/B/n Testing
-![A/B/n Test](figures/a_b_n_test.png)
+
+### 6.  A/B/n Testing: Intervention Strategy Comparison
+
+To evaluate learner engagement interventions, I designed a simulated A/B/n experiment comparing three strategies:
+
+* **Control Group**: No intervention
+* **Email Reminder Group**: Reminder emails sent to inactive learners
+* **Reward Incentive Group**: Milestone-based rewards using redeemable learning points
+
+### Certification Rates
+
+* Control: **2.76%**
+* Email Reminder: **3.40%**
+* Reward Incentive: **4.30%**
+
+#### Statistical Testing Results
+
+All pairwise comparisons showed statistically significant improvements:
+
+* Control vs Email: **p = 0.0088**
+* Control vs Reward: **p < 0.0001**
+* Email vs Reward: **p = 0.0009**
+
+#### Key Findings
+
+* Both interventions improved certification rates significantly
+* Reward incentives produced the strongest lift
+* Incentive-based interventions outperformed passive reminder strategies
+
+![A/B Test](figures/a_b_n_test.png)
+![Relative Improvement](figures/relative_improvement_in_certification_rate.png)
 
 ---
 
-## Business Recommendations
+### 7. ROI Analysis & Reward Strategy Optimization
 
-Based on the analysis, the following product strategies are recommended:
+Beyond evaluating intervention effectiveness, I analyzed the business impact of engagement strategies using ROI analysis and long-term profit simulation.
+ 
+#### Short-Term ROI Analysis
 
-### 1. Prioritize chapter completion optimization
+Two intervention strategies were compared:
 
-Since chapter completion is the strongest predictor of certification success, product improvements should focus on helping learners complete more chapters.
+* **Email Reminder**
+* **Reward Incentive**
 
-Potential strategies:
+Key findings:
 
-* Progress tracking
-* Milestone nudges
-* Chapter completion reminders
+* Email reminders delivered the highest short-term ROI due to minimal intervention cost.
+* Reward incentives significantly improved certification rates but incurred higher operational costs.
 
----
-
-### 2. Improve learner retention through engagement interventions
-
-Retention strongly influences certification outcomes.
-
-Recommended retention strategies:
-
-* Personalized reminders
-* Progress-based notifications
-* Learning streak incentives
+This highlights an important business trade-off between engagement improvement and cost efficiency.
 
 ---
 
-### 3. Implement reward-based incentive systems
+#### Long-Term Reward Strategy Simulation
 
-A/B/n testing suggests that reward-based interventions significantly outperform passive reminders.
+To identify the most effective incentive strategy, I simulated reward optimization for high-engagement learners.
 
-Potential incentive mechanisms:
+#### Reward Eligibility Criteria
 
-* Milestone reward points
-* Coupon systems
-* Gamified learning rewards
+Reward incentives were only offered to highly engaged learners:
 
-These strategies can improve learner motivation, retention, and certification outcomes.
+* Learners completing **15+ chapters**
+
+This targeted approach improves cost efficiency by focusing on learners with the highest probability of completion and retention.
+
+#### Funnel-Based Targeting
+
+Based on funnel analysis:
+
+* Paying users: **39,686**
+* Reward-eligible high-engagement users: **16,283**
+![Funnel Analysis](figures/learning_platform_funnel.png)
+
+---
+
+### Reward Strategies Tested
+
+Three reward strategies were simulated:
+
+* **Low Reward**
+* **Medium Reward**
+* **High Reward**
+
+Simulation considered three revenue components:
+
+* Initial Course Revenue
+* Certification Revenue
+* Future Enrollment Revenue
+
+---
+
+#### Key Findings
+
+* **Low Reward** achieved the highest ROI due to low intervention cost.
+* **Medium Reward** generated the highest net profit.
+* **High Reward** improved engagement further but showed diminishing returns due to rapidly increasing reward costs.
+
+---
+
+#### Strategic Recommendation
+
+The optimal strategy is not the highest reward level, but the reward level that balances learner engagement and business profitability.
+
+Simulation results suggest that a **Medium Reward Strategy** provides the strongest long-term business value by balancing:
+
+* Certification improvement
+* Learner retention
+* Cost efficiency
+* Profit maximization
+
+![ROI Comparison](figures/roi_comparison.png)
+![Reward Strategy ROI](figures/roi_by_reward_strategy.png)
+![Reward Strategy Net Profit](figures/net_prfit_by_reward_strategy.png)
+
+
+
+---
+
+## Final Business Recommendations
+
+Based on funnel analysis, engagement analysis, cohort analysis, A/B/n testing, and ROI simulation, the following product recommendations are proposed to improve learner success and maximize business value.
+
+---
+
+### 1. Prioritize chapter completion as the core engagement metric
+
+Chapter completion emerged as the strongest predictor of certification success.
+
+Product teams should monitor chapter completion as a primary KPI and identify early signals of learner drop-off.
+
+Recommended actions:
+
+* Track chapter completion rate by learner segment
+* Detect early disengagement signals
+* Trigger targeted interventions before learner churn
+
+---
+
+### 2. Improve retention during early learning stages
+
+Funnel analysis revealed substantial drop-off before learners reach deeper engagement stages.
+
+Improving retention during early-stage learning can significantly increase downstream certification rates.
+
+Recommended actions:
+
+* Optimize onboarding experience
+* Introduce milestone reminders
+* Reduce friction during early course progression
+
+---
+
+### 3. Use email reminders as a low-cost broad intervention
+
+Email reminders delivered strong short-term ROI due to minimal intervention cost.
+
+This makes email campaigns an efficient intervention for broad learner engagement.
+
+Best use cases:
+
+* Re-engaging inactive learners
+* Encouraging course continuation
+* Improving short-term retention
+
+---
+
+### 4. Apply reward incentives selectively to high-engagement learners
+
+Reward incentives delivered the strongest improvement in certification performance.
+
+However, broad incentive distribution can significantly increase costs.
+
+Simulation results suggest reward programs should be targeted toward high-engagement learners, especially those reaching critical milestone thresholds (e.g. 15+ completed chapters).
+
+This targeted approach improves:
+
+* Cost efficiency
+* Certification outcomes
+* Long-term retention
+
+---
+
+### 5. Adopt a medium-reward strategy for long-term profit maximization
+
+Long-term reward optimization simulation showed:
+
+* Low Reward → Highest ROI
+* Medium Reward → Highest Net Profit
+* High Reward → Diminishing Returns
+
+The Medium Reward strategy achieved the best balance between:
+
+* Learner engagement
+* Certification improvement
+* Retention uplift
+* Profitability
+
+This makes it the most effective long-term incentive strategy.
+
+---
+
+### Strategic Conclusion
+
+The most effective product strategy is a hybrid intervention model:
+
+* Use low-cost email reminders for broad learner engagement
+* Apply targeted medium-level reward incentives to high-potential learners
+
+This hybrid strategy optimizes both learner success and long-term business performance by balancing growth, retention, and profitability.
+
 
 ---
 
