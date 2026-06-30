@@ -272,6 +272,61 @@ Simulation results suggest that a **Medium Reward Strategy** provides the strong
 ![Reward Strategy ROI](figures/roi_by_reward_strategy.png)
 ![Reward Strategy Net Profit](figures/net_profit_by_reward_strategy.png)
 
+---
+
+## SQL Analysis
+
+- SQL analysis was conducted to further investigate learner conversion patterns, course performance, and engagement behaviors at both course and user levels.
+
+### 1. Funnel Analysis
+- Registered Users: 641,138
+- Viewed Users: 400,262
+- Explored Users: 39,686
+- Certified Users: 17,687
+
+### Key Findings
+- Large drop-off occurs between viewed and explored stages.
+- Exploration is the major bottleneck in the learner funnel.
+
+---
+
+### 2. Course Performance Analysis
+
+Top enrollment courses:
+- HarvardX/CS50x/2012
+- MITx/6.00x/2012_Fall
+
+Top certification rate courses:
+- MITx/14.73x/2013_Spring
+- MITx/3.091x/2012_Fall
+
+### Key Findings
+- Enrollment does not strongly correlate with certification success.
+- Popular courses attract traffic but not necessarily completion.
+
+---
+
+### 3. Certified vs Non-Certified Learner Behavior
+
+Certified learners show dramatically higher engagement across all metrics.
+
+Key findings:
+- Active Days: 46.91 vs 4.13
+- Events: 5159 vs 159
+- Video Plays: 499 vs 19.66
+- Chapters: 16.71 vs 1.75
+
+### Conclusion
+
+- SQL analysis consistently shows that engagement—not enrollment volume—is the strongest driver of certification success.
+
+- Learners with higher active days, stronger platform interaction, greater video engagement, and higher chapter completion demonstrate significantly higher certification outcomes.
+
+### Business Implication
+
+- SQL analysis further confirms that learner success is primarily driven by engagement rather than enrollment volume alone.
+
+- These findings suggest that improving early learner activation, sustained engagement, and targeted interventions for at-risk users should be the primary focus for platform optimization.
 
 
 ---
@@ -370,6 +425,8 @@ This hybrid strategy optimizes both learner success and long-term business perfo
 
 
 ---
+
+
 
 ## Tech Stack
 
